@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA=Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>BlackJack</title>
+    </head>
+    <body onload="game();">
+         <div id="dealerCardContainer"></div>
+         <div id="title">BLACKJACK NIGHT</div>
+
+         <div id="rPlayer1CardContainer"></div>
+         <div id="rPlayer1BalanceContainer"></div>
+         <div id="rPlayer1BettingContainer"></div>
+
+         <div id="rPlayer2CardContainer"></div>
+         <div id="rPlayer2BalanceContainer"></div>
+         <div id="rPlayer2BettingContainer"></div>
+
+         <div id="lPlayer1CardContainer"></div>
+         <div id="lPlayer1BalanceContainer"></div>
+         <div id="lPlayer1BettingContainer"></div>
+
+         <div id="lPlayer2CardContainer"></div>
+         <div id="lPlayer2BalanceContainer"></div>
+         <div id="lPlayer2BettingContainer"></div>
+
+         <div id="playerCardContainer"></div>
+         <div id="userOptionsContainer">
+            <div id="hitContainer">
+                <button class="userButtons" id="HIT">HIT</button>
+            </div>
+            <div id="doubleSplitContainer">
+                <button class="userButtons" id="DOUBLE">DOUBLE</button>
+            </div>
+            <div id="standContainer">
+                <button class="userButtons" id="STAND">STAND</button>
+            </div>
+         </div>
+         <div id="dealContainer">
+            <button class="userButtons" id="DEAL">DEAL</button>
+        </div>
+         <div id="userBettingContainer"></div>
+         <div id="userBetSize"></div>
+         <div id="timerContainer">5</div>
+         <div class="bettingChipsContainer">
+            <div class="pokerchip white" id="stackwhite"></div>
+		    <div class="pokerchip red" id="stackred"></div>
+		    <div class="pokerchip blue" id="stackblue"></div>
+		    <div class="pokerchip green" id="stackgreen"></div>
+		    <div class="pokerchip black" id="stackblack"></div>
+        </div>
+         <div id="userBalanceContainer"></div>
+         <div id="messege"></div>
+         <script src="playerLogic.js"></script>
+         <script src="cardObject.js"></script>
+         <script src="playerObject.js"></script>
+         <script src="gameObject.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
